@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <h1 align="center">Quiz</h1>
+
+    <div class="div1">
+        <p class="btn"><a href="index.html">Reload</a></p>
+    </div>
+
+    <div class="q1">
+        <h2>Question No.1</h1>
+        <h3>What is the full form of JS ?</h3>
+        <input onclick="quiz()" type="radio" name="q1" value="a">
+        <label>a) JavaScript </label>
+        <br>
+        <input type="radio" name="q1" value="b">
+         <label>b) JavaFrame </label>
+        <br>
+        <input type="radio" name="q1" value="c">
+         <label>c) JavaFrame </label>
+        <br>
+        <input type="radio" name="q1" value="d">
+        <label>d) Java</label>
+    </div>
+
+    <div class="q1">
+        <h2>Question No.2</h1>
+        <h3>What is the use of p tag ?</h3>
+        <input onclick="quiz()" type="radio" name="q2" value="a">
+        <label>a) paragraph </label>
+        <br>
+        <input type="radio" name="q2" value="b">
+         <label>b) public </label>
+        <br>
+        <input type="radio" name="q2" value="c">
+         <label>c) para </label>
+        <br>
+        <input type="radio" name="q2" value="d">
+        <label>d) param </label>
+    </div>
+    
+    <div class="q1">
+        <h2>Question No.3</h1>
+        <h3>What is the full form of HTML?</h3>
+        <input onclick="quiz()" type="radio" name="q3" value="a">
+        <label>a) Hyper Text Markup Language</label>
+        <br>
+        <input type="radio" name="q3" value="b">
+         <label>b) Hyper Text Marker Language </label>
+        <br>
+        <input type="radio" name="q3" value="c">
+         <label>c) Hyper Terminal Manual Language </label>
+        <br>
+        <input type="radio" name="q3" value="d">
+        <label>d) Hyper Tent Marker Language</label>
+    </div>
+
+    <div class="q1">
+        <h2>Question No.4</h1>
+        <h3>What is the tag which is used for bold style?</h3>
+        <input type="radio" name="q4" value="a">
+        <label>a) bold </label>
+        <br>
+        <input type="radio" name="q4" value="b">
+         <label>b) bld </label>
+        <br>
+        <input  onclick="quiz()" type="radio" name="q4" value="c">
+         <label>c) b </label>
+        <br>
+        <input type="radio" name="q4" value="d">
+        <label>d) bd</label>
+    </div>
+
+    <div class="q1">
+        <h2>Question No.5</h1>
+        <h3>What is the tag used for table?</h3>
+        <input onclick="quiz()" type="radio" name="q5" value="a">
+        <label>a) table  </label>
+        <br>
+        <input type="radio" name="q5" value="b">
+         <label>b) tab </label>
+        <br>
+        <input type="radio" name="q5" value="c">
+         <label>c) t  </label>
+        <br>
+        <input type="radio" name="q5" value="d">
+        <label>d) tt </label>
+    </div>
+
+    <div class="div1" onclick="sub()"> 
+    <p class="btn"><b>Submit</b></p>
+    </div>
+
+    <div><h1 id="submit" align="center"></h1></div>
+<script>
+    var count=0;
+    function quiz(){
+        count=count+1;
+    }
+    function sub(){
+        document.getElementById("submit").innerHTML="Hey! Your Score is: "+count+"/5";
+    }
+</script>
+
+</body>
+</html>

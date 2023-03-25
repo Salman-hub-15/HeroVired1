@@ -1,0 +1,17 @@
+.q1{
+    height:200px;
+    width:100%;
+    background-color: rgb(207, 191, 191);
+}
+.div1{
+
+    margin:20px;
+    background-color: darkseagreen;
+    width:60px;
+    height:30px;
+    border-radius: 10px;
+}
+.btn{
+    padding:5px;
+    list-style-type: none;
+}
