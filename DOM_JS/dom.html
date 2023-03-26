@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">DOM Manipulations</h1>
+    <h3 align="center">Paragraph</h3>
+    <p id="par" align="center">Hello this is a paragraph</p>
+    <br>
+    <div align="center">
+        <h3>Button</h3>
+    <button id="btn" onclick="inp()">Click me to change</button>
+    </div>
+
+    <br>
+    <div align="center">
+        <input type="text" id="input" name>
+    </div>
+
+    <br>
+    <div>
+        <h3>List items</h3>
+        <ul id="list">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    var par=document.getElementById('par');
+    par.addEventListener("mouseover",function(){
+        par.style.color="red";
+    })
+    par.addEventListener("mouseout",function(){
+        par.style.color="black";
+    })
+
+    var btn=document.getElementById('btn');
+    btn.addEventListener("mouseover",function(){
+        btn.innerHTML="Hey the button has changed"
+    })
+    btn.addEventListener("mouseout",function(){
+        btn.innerHTML="Click me to change"
+    })
+
+
+    var input=document.getElementById('input');
+    function inp(){
+        par.innerText=input.value;
+    }
+
+
+    var list=document.getElementById('list');
+    list.addEventListener("mouseover",(event)=>{
+        event.target.style.color="red";
+    })
+    list.addEventListener("mouseout",(event)=>{
+        event.target.style.color="black";
+    })
+</script>
+</html>
