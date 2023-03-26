@@ -1,0 +1,39 @@
+
+.div1{
+    margin-left:460px;
+    height: 600px;
+    width:700px;
+    display: flex;
+}
+
+.tab{
+    height:100px;
+    width:200px;
+    background-color: cornflowerblue;
+}
+
+.btn{
+    height:50px;
+    width:75px;
+    background-color: rgb(248, 164, 55);
+}
+.btn:hover{
+    background-color: black;
+    color:azure
+}
+
+.input{
+    
+    background-color: rgb(243, 246, 248);
+    border-radius: 8px;
+}
+
+.btn1{
+    height:50px;
+    width:155px;
+    background-color: lightsalmon;
+}
+.btn1:hover{
+    background-color: black;
+    color:azure
+}
